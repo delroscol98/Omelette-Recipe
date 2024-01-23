@@ -70,7 +70,8 @@ figure img {
 }
 
 .recipe_ingredients,
-.recipe_instructions {
+.recipe_instructions,
+.recipe_nutrition {
   margin-top: 2rem;
 }
 
@@ -83,7 +84,7 @@ section h2 {
 .recipe_ingredients ul,
 .recipe_instructions ol {
   padding: 1rem 0rem;
-  border-bottom: 0.5px solid var(--lightgrey);
+  border-bottom: 1px solid var(--lightgrey);
 }
 
 .recipe_ingredients ul li,
@@ -102,6 +103,31 @@ section h2 {
 .recipe_instructions ol li::marker {
   color: var(--nutmeg);
   font-weight: bold;
+}
+
+.recipe_nutrition p {
+  color: var(--wengebrown);
+  font-size: 1.75rem;
+  padding: 2rem 0;
+}
+
+.recipe_nutrition table {
+  font-size: 1.75rem;
+  color: var(--wengebrown);
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.recipe_nutrition table tbody tr:not(:last-child) {
+  border-bottom: 1px solid var(--lightgrey);
+}
+
+.recipe_nutrition table tbody td {
+  padding: 1rem 4rem;
+}
+
+.recipe_nutrition table strong {
+  color: var(--nutmeg);
 }
 
 .attribution {
