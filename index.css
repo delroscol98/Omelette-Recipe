@@ -22,6 +22,7 @@
 html {
   font-size: 62.5%;
   font-family: "Outfit", sans-serif;
+  line-height: 1.6;
 }
 
 figure img {
@@ -40,7 +41,6 @@ figure img {
 
 .recipe_intro p {
   font-size: 1.75rem;
-  line-height: 1.5;
   margin-top: 2rem;
   color: var(--wengebrown);
 }
@@ -69,26 +69,25 @@ figure img {
   font-size: small;
 }
 
-.recipe_prep p {
-  font-family: "Outfit", sans-serif;
-}
-
-.recipe_ingredients {
+.recipe_ingredients,
+.recipe_instructions {
   margin-top: 2rem;
 }
 
-.recipe_ingredients h2 {
+section h2 {
   color: var(--nutmeg);
   font-family: "Young Serif", serif;
   font-size: 3rem;
 }
 
-.recipe_ingredients ul {
+.recipe_ingredients ul,
+.recipe_instructions ol {
   padding: 1rem 0rem;
   border-bottom: 0.5px solid var(--lightgrey);
 }
 
-.recipe_ingredients ul li {
+.recipe_ingredients ul li,
+.recipe_instructions ol li {
   font-size: 1.75rem;
   margin: 2rem 2rem 2rem;
   padding-left: 2rem;
@@ -98,6 +97,11 @@ figure img {
 .recipe_ingredients ul li::marker {
   color: var(--nutmeg);
   font-size: small;
+}
+
+.recipe_instructions ol li::marker {
+  color: var(--nutmeg);
+  font-weight: bold;
 }
 
 .attribution {
