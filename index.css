@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Young+Serif&display=swap");
+
+:root {
+  --nutmeg: hsl(14, 45%, 36%);
+  --dark-raspberry: hsl(332, 51%, 32%);
+  --white: hsl(0, 0%, 100%);
+  --rose-white: hsl(330, 100%, 98%);
+  --eggshell: hsl(30, 54%, 90%);
+  --lightgrey: hsl(30, 18%, 87%);
+  --wengebrown: hsl(30, 10%, 34%);
+  --dark-charcoal: hsl(24, 5%, 18%);
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Outfit", sans-serif;
+}
+
+figure img {
+  width: 100%;
+}
+
+.recipe {
+  margin: 4rem;
+}
+
+.recipe_intro h1 {
+  font-family: "Young Serif", serif;
+  font-size: 4rem;
+  color: var(--dark-charcoal);
+}
+
+.recipe_intro p {
+  font-size: 1.75rem;
+  line-height: 1.5;
+  margin-top: 2rem;
+  color: var(--wengebrown);
+}
+
+.recipe_prep {
+  background-color: var(--rose-white);
+  padding: 2rem;
+  margin-top: 2rem;
+  border-radius: 1.5rem;
+}
+
+.recipe_prep h3 {
+  color: var(--dark-raspberry);
+  font-size: 2rem;
+}
+
+.recipe_prep ul li {
+  margin: 2rem 2rem 2rem;
+  padding-left: 2rem;
+  font-size: 1.75rem;
+  color: var(--wengebrown);
+}
+
+.recipe_prep ul li::marker {
+  color: var(--dark-raspberry);
+}
+
+.recipe_prep p {
+  font-family: "Outfit", sans-serif;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
