@@ -23,13 +23,19 @@ html {
   font-size: 62.5%;
   font-family: "Outfit", sans-serif;
   line-height: 1.6;
+  background-color: var(--eggshell);
+}
+
+.recipe {
+  background-color: var(--white);
 }
 
 figure img {
   width: 100%;
+  overflow: hidden;
 }
 
-.recipe {
+section {
   margin: 4rem;
 }
 
@@ -136,4 +142,20 @@ section h2 {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 426px) {
+  .recipe {
+    width: 50%;
+    margin: 10rem auto;
+    border-radius: 5rem;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  figure img {
+    margin: 4rem 4rem 0 4rem;
+    width: -webkit-fill-available;
+    border-radius: 2.5rem;
+  }
 }
